@@ -1,0 +1,1 @@
+React is just a JS library. It's like somebody wrote some code for us
