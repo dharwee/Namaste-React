@@ -33,3 +33,7 @@ React is just a JS library. It's like somebody wrote some code for us
                 -copyright 
  * 
  */
+
+
+//Config Driven UI -- conditions ke hisaab se components ka live basis pe render hona. backend pe dekh kr UI change hota h.
+Jaise iss project me, location ke hisaab se chize show hongi.

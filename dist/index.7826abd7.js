@@ -2952,11 +2952,30 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _indexCss = require("./index.css");
+var _logoPng = require("./public/logo.png"); // Import the image
+var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 const Title = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        id: "title",
-        children: "Food Villa"
-    }, "h2", false, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+            href: "/",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: (0, _logoPngDefault.default),
+                    alt: "Logo"
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 11,
+                    columnNumber: 5
+                }, undefined),
+                ";"
+            ]
+        }, void 0, true, {
+            fileName: "App.js",
+            lineNumber: 10,
+            columnNumber: 5
+        }, undefined)
+    }, void 0, false, {
         fileName: "App.js",
         lineNumber: 9,
         columnNumber: 5
@@ -2964,13 +2983,13 @@ const Title = ()=>{
 };
 _c = Title;
 //composing component
-const HeaderComponent = ()=>{
+const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 19,
+                lineNumber: 21,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -2981,65 +3000,298 @@ const HeaderComponent = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 22,
+                            lineNumber: 24,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 23,
+                            lineNumber: 25,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 24,
+                            lineNumber: 26,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "App.js",
-                            lineNumber: 25,
+                            lineNumber: 27,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "App.js",
-                    lineNumber: 21,
+                    lineNumber: 23,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 20,
+                lineNumber: 22,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 9
     }, undefined);
 };
-_c1 = HeaderComponent;
+_c1 = Header;
+const RestrauntList = [
+    {
+        "card": {
+            "card": {
+                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                "info": {
+                    "id": "78036",
+                    "name": "Burger King",
+                    "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/13/a3485033-fb70-41b1-aeb9-1caf3064acf4_78036.jpg",
+                    "locality": "Central Plaza, Kalina",
+                    "areaName": "Santacruz East",
+                    "costForTwo": "\u20B9350 for two",
+                    "cuisines": [
+                        "Burgers",
+                        "American"
+                    ],
+                    "avgRating": 4.3,
+                    "parentId": "166",
+                    "avgRatingString": "4.3",
+                    "totalRatingsString": "37K+",
+                    "sla": {
+                        "deliveryTime": 31,
+                        "lastMileTravel": 2.3,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "30-35 mins",
+                        "lastMileTravelString": "2.3 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                    },
+                    "availability": {
+                        "nextCloseTime": "2025-03-15 05:00:00",
+                        "opened": true
+                    },
+                    "badges": {
+                        "imageBadges": [
+                            {
+                                "imageId": "Rxawards/_CATEGORY-Burger.png",
+                                "description": "Delivery!"
+                            }
+                        ]
+                    },
+                    "isOpen": true,
+                    "type": "F",
+                    "badgesV2": {
+                        "entityBadges": {
+                            "textBased": {},
+                            "imageBased": {
+                                "badgeObject": [
+                                    {
+                                        "attributes": {
+                                            "imageId": "Rxawards/_CATEGORY-Burger.png",
+                                            "description": "Delivery!"
+                                        }
+                                    }
+                                ]
+                            },
+                            "textExtendedBadges": {}
+                        }
+                    },
+                    "aggregatedDiscountInfoV3": {
+                        "header": "ITEMS",
+                        "subHeader": "AT \u20B939",
+                        "logoCtx": {
+                            "text": "BENEFITS"
+                        }
+                    },
+                    "orderabilityCommunication": {
+                        "title": {},
+                        "subTitle": {},
+                        "message": {},
+                        "customIcon": {},
+                        "commsStyling": {}
+                    },
+                    "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                            "lottie": {},
+                            "video": {}
+                        }
+                    },
+                    "reviewsSummary": {},
+                    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    "restaurantOfferPresentationInfo": {},
+                    "externalRatings": {
+                        "aggregatedRating": {
+                            "rating": "--"
+                        }
+                    },
+                    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                    "requestContexts": [
+                        "no_rush_dynamic_delfee"
+                    ]
+                },
+                "analytics": {},
+                "cta": {
+                    "link": "swiggy://menu?restaurant_id=78036&source=collection&query=Burger",
+                    "text": "RESTAURANT_MENU",
+                    "type": "DEEPLINK"
+                },
+                "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+                "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                "sectionId": "MENU_RETURN_FOOD"
+            }
+        }
+    }
+];
+const RestrauntCard = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/3/13/a3485033-fb70-41b1-aeb9-1caf3064acf4_78036.jpg"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 171,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Burger King"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 172,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Burgers, Americans"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 173,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "4.2 stars"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 174,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 170,
+        columnNumber: 9
+    }, undefined);
+};
+_c2 = RestrauntCard;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "restraunt-list",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 183,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 184,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 185,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 186,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 187,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 188,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {}, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 189,
+                    columnNumber: 13
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "App.js",
+            lineNumber: 182,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false);
+};
+_c3 = Body;
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "footer"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 198,
+        columnNumber: 9
+    }, undefined);
+};
+_c4 = Footer;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 205,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 206,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 207,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c5 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 33,
+    lineNumber: 214,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "HeaderComponent");
+$RefreshReg$(_c1, "Header");
+$RefreshReg$(_c2, "RestrauntCard");
+$RefreshReg$(_c3, "Body");
+$RefreshReg$(_c4, "Footer");
+$RefreshReg$(_c5, "AppLayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./index.css":"giGSC"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./index.css":"giGSC","./public/logo.png":"f1ANd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -18634,7 +18886,45 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"21dqq"}],"gkKU3":[function(require,module,exports,__globalThis) {
+},{"6f0162e9ab224cd4":"21dqq"}],"giGSC":[function() {},{}],"f1ANd":[function(require,module,exports,__globalThis) {
+module.exports = require("79873937ea215493").getBundleURL('lly8x') + "logo.352165aa.png" + "?" + Date.now();
+
+},{"79873937ea215493":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"gkKU3":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18809,6 +19099,6 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC","630b62916b1ae0e7":"4SQxb"}],"4SQxb":[function(require,module,exports,__globalThis) {
 module.exports = JSON.parse("{\"name\":\"react-refresh\",\"description\":\"React is a JavaScript library for building user interfaces.\",\"keywords\":[\"react\"],\"version\":\"0.14.2\",\"homepage\":\"https://reactjs.org/\",\"bugs\":\"https://github.com/facebook/react/issues\",\"license\":\"MIT\",\"files\":[\"LICENSE\",\"README.md\",\"babel.js\",\"runtime.js\",\"cjs/\",\"umd/\"],\"main\":\"runtime.js\",\"exports\":{\".\":\"./runtime.js\",\"./runtime\":\"./runtime.js\",\"./babel\":\"./babel.js\",\"./package.json\":\"./package.json\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/facebook/react.git\",\"directory\":\"packages/react\"},\"engines\":{\"node\":\">=0.10.0\"},\"devDependencies\":{\"react-16-8\":\"npm:react@16.8.0\",\"react-dom-16-8\":\"npm:react-dom@16.8.0\",\"scheduler-0-13\":\"npm:scheduler@0.13.0\"}}");
 
-},{}],"giGSC":[function() {},{}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
+},{}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
 
 //# sourceMappingURL=index.7826abd7.js.map

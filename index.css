@@ -1,14 +1,69 @@
-.header{
-    display:flex;
+/* Apply a soft background color */
+.header {
+    display: flex;
     justify-content: space-between;
-    margin:10px;
-    border: 1px solid black;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fffae5; /* Light pastel yellow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
- .nav-items > ul{
-    list-style-type:none ;
-    display: flex;
+/* Logo Styling */
+.logo {
+    width: 180px;
+    height: auto;
 }
-.nav-items > ul > li{
-    padding: 10px;
-} 
+
+/* Navigation Menu */
+.nav-items > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Add spacing between menu items */
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-items > ul > li {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444; /* Dark gray for readability */
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-items > ul > li:hover {
+    background-color: #ffd166; /* Soft pastel orange on hover */
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.card{
+    width:200px;
+    border: 1px solid black;
+    padding:10px;
+    margin: 10px;
+    
+}
+.card>img{
+    width: 100%;
+}
+.restraunt-list{
+    display: flex;
+    flex-wrap: wrap;
+}
