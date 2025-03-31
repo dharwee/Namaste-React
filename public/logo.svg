@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Circular plate as background for the fork -->
+  <defs>
+    <linearGradient id="plateGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F5F5" />
+      <stop offset="100%" stop-color="#E0E0E0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Creative Fork forming a house/villa roof -->
+  <path d="M100 70 L150 40 L200 70" stroke="#FF6F00" stroke-width="8" fill="none" stroke-linecap="round" />
+  
+  <!-- Fork handle as the house pillar -->
+  <path d="M150 40 L150 130" stroke="#FF6F00" stroke-width="8" fill="none" stroke-linecap="round" />
+  
+  <!-- Fork tines forming windows -->
+  <path d="M120 70 L120 110" stroke="#FF6F00" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M150 70 L150 110" stroke="#FF6F00" stroke-width="6" fill="none" stroke-linecap="round" />
+  <path d="M180 70 L180 110" stroke="#FF6F00" stroke-width="6" fill="none" stroke-linecap="round" />
+  
+  <!-- Base line representing a plate -->
+  <path d="M100 130 C100 130, 150 145, 200 130" stroke="#FF6F00" stroke-width="6" fill="none" stroke-linecap="round" />
+  
+  <!-- Steam/aroma lines above the fork/house -->
+  <path d="M130 35 C135 25, 140 30, 145 20" stroke="#FF9800" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M150 30 C155 20, 160 25, 165 15" stroke="#FF9800" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M170 35 C175 25, 180 30, 185 20" stroke="#FF9800" stroke-width="2" fill="none" stroke-linecap="round" />
+  
+  <!-- Text -->
+  <text x="150" y="175" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#333333">FOOD VILLA</text>
+</svg>
